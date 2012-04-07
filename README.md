@@ -27,4 +27,29 @@ Usage
    build on CTRL+B or CMD+B.
 2. Hit your favorite shortcut to Save.
 
+
+Improvements
+------------
+
+Added the setting `saveOnBuild` for choosing a project for building on save, not all!
+
+1. Disable saveOnBuild in your user settings:
+
+	{
+		"saveOnBuild": false
+	}
+
+2. Create a Project you wish to use this feature
+3. Open the **PROJECTNAME.sublime-project** file
+4. Activate the feature only for this project:
+
+	{
+		"settings": {
+			"saveOnBuild": true
+		}
+	}
+
+5. Thats it!
+
+
 *Good luck!*

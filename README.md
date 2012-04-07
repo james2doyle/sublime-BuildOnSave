@@ -28,26 +28,26 @@ Usage
 2. Hit your favorite shortcut to Save.
 
 
-Improvements
+Only for specific projects
 ------------
 
-Added the setting `saveOnBuild` for choosing a project for building on save, not all!
+I added the setting `saveOnBuild` control if the build process should be triggered or not. It's simple:
 
-1. Disable saveOnBuild in your user settings:
+1. Disable global saveOnBuild in your user settings:
 
-	{
-		"saveOnBuild": false
-	}
+		{
+			"saveOnBuild": false
+		}
 
-2. Create a Project you wish to use this feature
+2. Create a Project with a build system
 3. Open the **PROJECTNAME.sublime-project** file
 4. Activate the feature only for this project:
 
-	{
-		"settings": {
-			"saveOnBuild": true
+		{
+			"settings": {
+				"saveOnBuild": true
+			}
 		}
-	}
 
 5. Thats it!
 

@@ -1,0 +1,36 @@
+[
+  {
+    "id": "preferences",
+    "children": [
+      {
+        "caption": "Package Settings",
+        "id": "package-settings",
+        "children": [
+          {
+            "caption": "BuildOnSave",
+            "children": [
+              {
+                "caption": "Global Toggle – `build_on_save`",
+                "command": "open_file",
+                "args": {"file": "${packages}/User/Preferences.sublime-settings"}
+              },
+              {
+                "caption": "-"
+              },
+              {
+                "caption": "Settings – Default",
+                "command": "open_file",
+                "args": {"file": "${packages}/BuildOnSave/BuildOnSave.sublime-settings"}
+              },
+              {
+                "caption": "Settings – User",
+                "command": "open_file",
+                "args": {"file": "${packages}/User/BuildOnSave.sublime-settings"}
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

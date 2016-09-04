@@ -1,3 +1,6 @@
 {
+  // enable or disable build-on-save
+  "build_on_save": true,
+  // Build-on-save will apply only to these file extensions
   "build_on_save_filetypes": ["sass", "scss", "less", "jade"]
 }

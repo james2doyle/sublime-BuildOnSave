@@ -31,24 +31,9 @@ Installation
 Configuration
 -------------
 
-1. Add and activate the `build_on_save` setting to your ST **User Settings**:
-```json
-{
-  "build_on_save": true
-}
-```
-
-2. Edit the package setting `build_on_save_filetypes` if needed.<br>
+1. Edit the package setting `build_on_save_filetypes` if needed.<br>
    This setting selects filetypes to build after save.
-
-Usage
------
-1. Make sure your build systems are set up properly.
-2. Now just save a file, and the build command should run on it. <br>
-   (If the file's extension exists in `build_on_save_filetypes`.)
-
-3. Toggle Build-on-Save on a per file basis with **Tools | Build on Save**.
-3. You can control build-on-save for individual projects too. <br>
+2. You can control build-on-save for individual projects too. <br>
    Simply configure the `.sublime-project` file, like so:
 ```json
 {
@@ -58,6 +43,14 @@ Usage
   }
 }
 ```
+
+
+Usage
+-----
+1. Make sure your build systems are set up properly.
+2. Now just save a file, and the build command should run on it. <br>
+   (If the file's extension exists in `build_on_save_filetypes`.)
+3. Toggle Build-on-Save on a per file basis with **Tools | Build on Save**.
 
 
 *Good Luck!*

@@ -5,5 +5,5 @@ class BuildOnSave( sublime_plugin.EventListener ):
         settings = sublime.load_settings( "BuildOnSave.sublime-settings" )
 
         if view.settings().get('build_on_save', True):
-	        if re.search( settings.get( "filename_filter" ), view.file_name() ):
-	            view.window().run_command( "build" )
+          if re.search( settings.get( "filename_filter" ), view.file_name() ):
+              view.window().run_command( "build" )

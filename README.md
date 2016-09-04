@@ -1,56 +1,66 @@
-BuildOnSave SublimeText Plugin
+BuildOnSave - SublimeText Plugin
 =================================
-_(forked from [SublimeSaveOnBuild](https://github.com/alexnj/SublimeOnSaveBuild))_
 
-This is a simple plugin for [Sublime Text](http://www.sublimetext.com/) to
-trigger a build on each save.
+A plugin for [Sublime Text](http://www.sublimetext.com) that triggers the build
+command after each save.
 
-Not all projects might need this plugin, especially if the build operation is
-lengthy. However, if you have a build that does things like pre-processing CSS
-via tools like [LessCSS](http://lesscss.org) and stitching all JS files together,
-this might be very handy.
 
 Installation
 ------------
 
-Clone this repo into your Sublime Text Packages directory
-###Linux
-    cd ~/.config/sublime-text/Packages/
-    git clone git://github.com/smsrkr/BuildOnSave.git
+### Package Control
+  + Select **Package Control: Add Repository** from the Command Palette.
+  + Add `https://github.com/smsrkr/BuildOnSave`.
+  + Select **Package Control: Install Package** from the Command Palette.
+  + Search for and install `BuildOnSave`.
 
-###Mac
-    cd ~/"Library/Application Support/Sublime Text/Packages/"
-    git clone git://github.com/smsrkr/BuildOnSave.git
+### Without Package Control
++ #### Linux/OSX
+  ```batch
+  cd "path/to/SublimeText/Packages/"
+  git clone git://github.com/smsrkr/BuildOnSave.git
+  ```
+
++ #### Windows
+  ```batch
+  cd "path\to\SublimeText\Packages\"
+  git clone git://github.com/smsrkr/BuildOnSave.git
+  ```
+
+
+Configuration
+-------------
+
+1. Add and activate the `build_on_save` setting to your ST **User Settings**:
+```json
+{
+  "build_on_save": true
+}
+```
+
+2. Edit the package setting `build_on_save_filetypes` if needed.<br>
+   This setting selects filetypes to build after save.
 
 Usage
 -----
-1. Make sure you have a build operation set up in Sublime and you are able to
-   build on CTRL+B or CMD+B.
-2. Hit your favorite shortcut to Save.
+1. Make sure your build systems are set up properly.
+2. Now just save a file, and the build command should run on it. <br>
+   (If the file's extension exists in `build_on_save_filetypes`.)
+
+3. Toggle Build-on-Save on a per file basis with **Tools | Build on Save**.
+3. You can control build-on-save for individual projects too. <br>
+   Simply configure the `.sublime-project` file, like so:
+```json
+{
+  "settings":
+  {
+    "build_on_save": true
+  }
+}
+```
 
 
-Only for specific projects
-------------
-
-I added the setting `build_on_save` control if the build process should be triggered or not. It's simple:
-
-1. Disable global `build_on_save` in your user settings:
-
-		{
-			"build_on_save": false
-		}
-
-2. Create a Project with a build system
-3. Open the **PROJECTNAME.sublime-project** file
-4. Activate the feature only for this project:
-
-		{
-			"settings": {
-				"build_on_save": true
-			}
-		}
-
-5. Thats it!
+*Good Luck!*
 
 
-*Good luck!*
+_A fork of [SublimeSaveOnBuild](https://github.com/alexnj/SublimeOnSaveBuild)_

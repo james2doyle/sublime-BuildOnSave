@@ -1,7 +1,8 @@
-SublimeOnSaveBuild Sublime Plugin
+BuildOnSave SublimeText Plugin
 =================================
+_(forked from [SublimeSaveOnBuild](https://github.com/alexnj/SublimeOnSaveBuild))_
 
-This is a simple plugin for [Sublime Text 2](http://www.sublimetext.com/2) to
+This is a simple plugin for [Sublime Text](http://www.sublimetext.com/) to
 trigger a build on each save.
 
 Not all projects might need this plugin, especially if the build operation is
@@ -12,14 +13,14 @@ this might be very handy.
 Installation
 ------------
 
-Clone this repo into your Sublime Text 2 Packages directory
+Clone this repo into your Sublime Text Packages directory
 ###Linux
-    cd ~/.config/sublime-text-2/Packages/
-    git clone git://github.com/alexnj/SublimeOnSaveBuild.git
+    cd ~/.config/sublime-text/Packages/
+    git clone git://github.com/smsrkr/BuildOnSave.git
 
 ###Mac
-    cd ~/"Library/Application Support/Sublime Text 2/Packages/"
-    git clone git://github.com/alexnj/SublimeOnSaveBuild.git
+    cd ~/"Library/Application Support/Sublime Text/Packages/"
+    git clone git://github.com/smsrkr/BuildOnSave.git
 
 Usage
 -----
@@ -31,12 +32,12 @@ Usage
 Only for specific projects
 ------------
 
-I added the setting `saveOnBuild` control if the build process should be triggered or not. It's simple:
+I added the setting `build_on_save` control if the build process should be triggered or not. It's simple:
 
-1. Disable global saveOnBuild in your user settings:
+1. Disable global `build_on_save` in your user settings:
 
 		{
-			"saveOnBuild": false
+			"build_on_save": false
 		}
 
 2. Create a Project with a build system
@@ -45,7 +46,7 @@ I added the setting `saveOnBuild` control if the build process should be trigger
 
 		{
 			"settings": {
-				"saveOnBuild": true
+				"build_on_save": true
 			}
 		}
 

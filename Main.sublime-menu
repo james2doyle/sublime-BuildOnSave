@@ -1,19 +1,5 @@
 [
   {
-    "id": "tools",
-    "children": [
-      {
-        "caption": "-",
-        "id": "build"
-      },
-      {
-        "caption": "Build on Save",
-        "command": "toggle_build_on_save",
-        "mnemonic": "v"
-      }
-    ]
-  },
-  {
     "id": "preferences",
     "children": [
       {

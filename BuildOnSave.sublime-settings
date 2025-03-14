@@ -1,6 +1,25 @@
 {
-  // enable or disable build-on-save
-  "build_on_save": true,
-  // Build-on-save will apply only to these file extensions
-  "build_on_save_filetypes": ["sass", "scss", "less", "jade"]
+  "build_on_save": {
+    // print details on what is happening
+    "logging": false,
+    // enable or disable build-on-save
+    "enabled": true,
+    // run the default build system when there is no match
+    "always_run_default": true,
+    // panel toggle
+    "show_panel_on_build": false,
+    // delay the build in case there is a reason
+    "delay": 0,
+    // Build-on-save will apply only to these file extensions
+    "build_system_map": {
+      // The keys are syntax names
+      // The values are the NAMES of Sublime Text build systems
+      // (as they appear in the Tools -> Build System menu).
+
+      // Examples:
+      // "HTML (Blade)": "Project - Format Blade File", // this is the "name" of a Project build system
+      // "JavaScript": "NodeJs", // this is the "name" of a build system
+      // "C++": "Make", // this is the "name" of a build system
+    }
+  }
 }
